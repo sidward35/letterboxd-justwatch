@@ -5,7 +5,7 @@ from bs4 import BeautifulSoup
 from justwatch import JustWatch
 
 just_watch = JustWatch(country='US')
-services = ['amp','nfx'] # set streaming services to search (in order)
+services = ['amp', 'nfx', 'stv', 'hmf', 'pct', 'pcp', 'fmn', 'rkc', 'yfr', 'tcw', 'cws', 'vuf', 'pbs', 'tbv', 'knp', 'com', 'cru', 'abc', 'crk', 'his', 'aae', 'lft', 'pcf', 'bmg', 'dvc', 'ytv', 'mot', 'lol', 'ssc', 'ptv', 'vix', 'sft', 'tfd', 'vtv', 'ctw', 'ads', 'usn', 'vik', 'dkm', 'brv', 'fnw', 'ind', 'ahc', 'tlc', 'hgt', 'diy', 'inv', 'sci', 'dea', 'apl', 'dil', 'dis', 'coo', 'tra', 'hrv', 'ltv', 'vho', 'flr', 'rvy', 'rst', 'hyh', 'vrv', 'dpu', 'plx', 'own', 'fmz', 'bph', 'hoc', 'aim', 'pdm'] # set streaming services to search (in order)
 letterboxd_username = 'sidward35'
 watchlist_pages = 4
 
@@ -39,7 +39,10 @@ for service in services:
 		movie = watchlist_titles[i]
 		#year = watchlist_years[i]
 		#movies_found = just_watch.search_for_item(query=movie+' '+year, providers=[service], monetization_types=['flatrate'])
-		movies_found = just_watch.search_for_item(query=movie, providers=[service], monetization_types=['flatrate'])
+		if service=='amp' or service=='nfx' or service=='stv': # for paid services
+			movies_found = just_watch.search_for_item(query=movie, providers=[service], monetization_types=['flatrate', 'free', 'ads'])
+		else: # for free services
+			movies_found = just_watch.search_for_item(query=movie, providers=[service], monetization_types=['free', 'ads'])
 		if len(movies_found['items'])>0 and movies_found['items'][0]['title'] == movie:
 			service_list.append(movie+' ('+str(movies_found['items'][0]['original_release_year'])+')') 
 			indexes_to_remove.append(i)
