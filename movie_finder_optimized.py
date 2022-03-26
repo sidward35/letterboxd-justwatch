@@ -57,9 +57,9 @@ for i in range(len(watchlist_titles)):
 				break
 		if not movie_found:
 			try:
-				result['F2Movies'].append(movie+' ('+str(movies_found['items'][0]['original_release_year'])+')')
+				result['Other'].append(movie+' ('+str(movies_found['items'][0]['original_release_year'])+')')
 			except:
-				result['F2Movies'] = [movie+' ('+str(movies_found['items'][0]['original_release_year'])+')']
+				result['Other'] = [movie+' ('+str(movies_found['items'][0]['original_release_year'])+')']
 
 
 pprint(result)
