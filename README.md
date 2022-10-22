@@ -140,6 +140,7 @@ watchlist_pages = 4
 |The Oprah Winfrey Network|own|
 |OVID|ovi|
 |OXYGEN|oxy|
+|Paramount+ Showtime|pst|
 |PBS|pbs|
 |PBS Kids Amazon Channel|apk|
 |PBS Masterpiece Amazon Channel|apm|
