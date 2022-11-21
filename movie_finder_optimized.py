@@ -35,8 +35,7 @@ print(letterboxd_username+"'s watchlist: "+str(watchlist_titles))
 
 
 result = {}
-for i in range(len(watchlist_titles)):
-	movie = watchlist_titles[i]
+for movie in watchlist_titles:
 	movies_found = just_watch.search_for_item(query=movie, monetization_types=['flatrate', 'free', 'ads'])
 	if len(movies_found['items'])>0 and movies_found['items'][0]['title'] == movie:
 		movie_found = False
