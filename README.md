@@ -1,5 +1,8 @@
 # letterboxd-justwatch
-Scans your [Letterboxd](https://letterboxd.com) watchlist and shows you where you can watch those movies using [JustWatch](https://www.justwatch.com)
+
+Try the web version at [find.astream.cf](http://find.astream.cf)!
+
+Scans your [Letterboxd](https://letterboxd.com) watchlist and shows you where you can watch those movies using [JustWatch](https://www.justwatch.com).
 
 ## Usage
 1. Install `BeautifulSoup4` and `justwatch` using pip.
