@@ -1,6 +1,6 @@
 # letterboxd-justwatch
 
-Try the web version at [find.astream.cf](http://find.astream.cf)!
+Try the web version at [js.smathur.xyz](https://js.smathur.xyz)!
 
 Scans your [Letterboxd](https://letterboxd.com) watchlist and shows you where you can watch those movies using [JustWatch](https://www.justwatch.com).
 
