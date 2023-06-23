@@ -19,7 +19,9 @@ watchlist_titles = []
 ssl._create_default_https_context = ssl._create_unverified_context
 html_str = ''
 for i in range(watchlist_pages):
-	fp = urllib.request.urlopen("https://letterboxd.com/"+letterboxd_username+"/watchlist/by/popular/page/"+str(i+1))
+	url = "https://letterboxd.com/"+letterboxd_username+"/watchlist/by/popular/page/"+str(i+1)
+	req = urllib.request.Request(url, headers={'User-Agent': "Magic Browser"}) 
+	fp = urllib.request.urlopen(req)
 	html_str+=fp.read().decode("utf8")
 	fp.close()
 
