@@ -6,7 +6,7 @@ Scans your [Letterboxd](https://letterboxd.com) watchlist and shows you where yo
 
 ## Usage
 1. Install `BeautifulSoup4` and `justwatch` using pip.
-2. Download [movie_finder.py](https://raw.githubusercontent.com/sidward35/letterboxd-justwatch/main/movie_finder.py).
+2. Download [movie_finder.py](https://github.com/sidward35/letterboxd-justwatch/blob/main/movie_finder.py).
 3. Edit lines 10 and 11 to set your paid streaming services ([service codes](#service-codes) below) and Letterboxd username.
 ```python
 paid_services = ['amp', 'nfx', 'stv']
