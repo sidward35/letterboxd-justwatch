@@ -12,7 +12,7 @@ letterboxd_username = 'sidward35'
 
 def get_page_count(username):
 	html_str = ''
-	url = "https://letterboxd.com/"+letterboxd_username+"/watchlist"
+	url = "https://letterboxd.com/"+username+"/watchlist"
 	req = urllib.request.Request(url, headers={'User-Agent': "Magic Browser"}) 
 	fp = urllib.request.urlopen(req)
 	html_str+=fp.read().decode("utf8")
@@ -24,7 +24,6 @@ def get_page_count(username):
 	start = " wants</span> to see "
 	stop = "films</h1>"
 	page_count = int(base_str[base_str.index(start) + len(start) : base_str.index(stop)])
-	print(page_count)
 	return int(page_count/(7*4)+1)
 
 # get watchlist
