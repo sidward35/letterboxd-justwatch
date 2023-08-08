@@ -13,7 +13,7 @@ Like this project? Support me below:
 ## Usage
 1. Install `BeautifulSoup4` and `justwatch` using pip.
 2. Download [movie_finder_optimized.py](https://raw.githubusercontent.com/sidward35/letterboxd-justwatch/main/movie_finder_optimized.py).
-3. Edit lines 9 and 10 to set your paid streaming services ([service codes](#service-codes) below) and Letterboxd username.
+3. Edit lines 10 and 11 to set your paid streaming services ([service codes](#service-codes) below) and Letterboxd username.
 ```python
 paid_services = ['amp', 'nfx', 'stv']
 letterboxd_username = 'sidward35'
