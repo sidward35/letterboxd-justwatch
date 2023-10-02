@@ -19,11 +19,9 @@ def get_page_count(username):
 	fp.close()
 
 	soup = BeautifulSoup(html_str, 'html.parser')
-	html_objects = soup.findAll('h1', {'class': 'section-heading'})
+	html_objects = soup.findAll('span', {'class': 'js-watchlist-count'})
 	base_str = str(html_objects[0])
-	start = " wants</span> to see "
-	stop = "films</h1>"
-	page_count = int(base_str[base_str.index(start) + len(start) : base_str.index(stop)])
+	page_count = int(base_str.replace('<span class="js-watchlist-count">', '').replace('\xa0films</span>', ''))
 	return int(page_count/(7*4)+1)
 
 # get watchlist
