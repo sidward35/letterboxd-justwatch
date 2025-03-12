@@ -1,2 +1,2 @@
 BeautifulSoup4
-justwatch
+simple-justwatch-python-api
