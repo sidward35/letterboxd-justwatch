@@ -5,7 +5,7 @@ Try the web version at [js.smathur.xyz](https://js.smathur.xyz)!
 Scans your [Letterboxd](https://letterboxd.com) watchlist and shows you where you can watch those movies using [JustWatch](https://www.justwatch.com).
 
 ## Usage
-1. Install `BeautifulSoup4` and `justwatch` using pip.
+1. Install `BeautifulSoup4` and `simple-justwatch-python-api` using pip.
 2. Download [movie_finder.py](https://github.com/sidward35/letterboxd-justwatch/blob/main/movie_finder.py).
 3. Edit lines 11 and 17 to set your paid streaming services ([service codes](#service-codes) below) and Letterboxd username.
 ```python
