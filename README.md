@@ -16,14 +16,6 @@ paid_services = [9, 8, 299]  # Amazon Prime, Netflix, Sling TV
 ```
 4. Run `python movie_finder.py`
 
-## Sponsor ❤️
-
-Like this project?
-
-<a href="https://www.paypal.com/donate/?business=ZBR8BGKVU5C5C&no_recurring=1">
-  <img src="https://user-images.githubusercontent.com/8982949/33011169-6da4af5e-cddd-11e7-94e5-a52d776b94ba.png" />
-</a>
-
 ## Service Codes
 | Streaming Service | Code | Provider ID |
 |:----------------:|:----:|:-----------:|
